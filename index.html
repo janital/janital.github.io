@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <link rel="icon" href="favicon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,8 +11,175 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Janita Røyseth</title>
   </head>
   <body>
-    <p>Hello World!</p>
+    <section class="section-about">
+      <div class="about container">
+        <h2 class="heading-secondary">About</h2>
+        <div class="about-grid">
+          <div class="about-text-box">
+            <p class="about-text">
+              Hello there! My name is Janita Lillevik Røyseth, I was born 1998
+              and come from Ålesund in Norway. For most of my life I've been
+              interested in technology, digital art and design. As a result I am
+              now currently attending my 2nd year at NTNU. I expect to be
+              finished with my bachelors degree in June 2023.
+            </p>
+
+            <h3 class="heading-tertiary">Childhood</h3>
+            <p class="about-text">
+              As a child I was primarily interested in horses, not something you
+              would expect someone technology interested to write? Well, this
+              interest turned me to a website for horse-interested girls. On
+              this website one could design their profile using html, which is
+              where I pinpoint that my interest for development started.
+            </p>
+            <h3 class="heading-tertiary">Teenage years</h3>
+            <p class="about-text">
+              In my teens I swapped out horse riding lessons for kickboxing, but
+              I was still active on the previously mentioned site, designing and
+              drawing. But I also moved on to other sites like deviantArt. I
+              later chose to study Media and Communication and ICT-Service, and
+              continue with vocational education afterwards. I spent 2 years as
+              an intern at the Norwegian Coastal Administration.
+            </p>
+            <h3 class="heading-tertiary">Adult life</h3>
+            <p class="about-text">
+              After finishing my internship with the Norwegian Coastal Guard I
+              found out I was pregnant. My plans took a completely different
+              direction. After spending over a year at home I knew I wanted to
+              do something else. So I applied for Computer Science at NTNU. I
+              spent my summer doing a precourse calculus, while looking after my
+              toddler (not an easy task, as one can imagine).
+            </p>
+            <h3 class="heading-tertiary">Today</h3>
+            <p class="about-text">
+              I am currently studying the 2nd year of Computer Science at NTNU
+              Ålesund, which focuses on application development. It is always
+              interesting and challenging, and also a lot of fun. It has been a
+              very rewarding road so far.
+            </p>
+          </div>
+          <div class="about-img-grid">
+            <img class="about-img" src="img/pic-1.png" />
+            <img class="about-img" src="img/pic-2.png" />
+            <img class="about-img" src="img/pic-3.png" />
+            <img class="about-img" src="img/pic-4.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-education">
+      <h2 class="heading-secondary center-align">Education</h2>
+      <div class="timeline-grid container">
+        <ion-icon class="education-icon" name="school-outline"></ion-icon>
+        <div class="education-info-box right-align">
+          <ion-icon
+            class="education-icon-unchecked"
+            name="checkmark-outline"
+          ></ion-icon>
+          <p class="education-title">Bachelor (In Progress)</p>
+          <p class="education-time-period">
+            <span class="education-time-period-start">June 2020</span> -
+            <span class="education-time-period-end">June 2023</span>
+          </p>
+          <p class="education-instituion">NTNU Campus Ålesund</p>
+        </div>
+        <div class="timeline-line"></div>
+        <div class="education-description-box left-align">
+          <p>
+            Currently studying Computer Science at NTNU Campus Ålesund which
+            focuses on application development. Expected to be finished in 2023.
+          </p>
+        </div>
+        <div class="education-description-box right-align">
+          <ion-icon
+            class="education-icon-checked"
+            name="checkmark-outline"
+          ></ion-icon>
+          <p>
+            As a part of vocational education I was an intern at the Norwegian
+            Coastal Administration. During my internship I worked primarily in
+            the support center, but did other tasks such as installing images on
+            new pc's, assisting with backup procedure, attending linux course
+            and more.
+          </p>
+        </div>
+        <div class="timeline-line"></div>
+        <div class="education-info-box left-align">
+          <p class="education-title">Vocational training / Internship</p>
+          <p class="education-time-period">
+            <span class="education-time-period-start">August 2016</span> -
+            <span class="education-time-period-end">August 2018</span>
+          </p>
+          <p class="education-instituion">
+            Sunnmøre Vocational Office & <br />
+            Norwegian Coastal Administration
+          </p>
+        </div>
+        <div class="education-info-box right-align">
+          <ion-icon
+            class="education-icon-checked"
+            name="checkmark-outline"
+          ></ion-icon>
+          <p class="education-title">ICT-Service - High School 2nd year</p>
+          <p class="education-time-period">
+            <span class="education-time-period-start">August 2016</span> -
+            <span class="education-time-period-end">June 2015</span>
+          </p>
+          <p class="education-instituion">Akademiet Ålesund</p>
+        </div>
+        <div class="timeline-line"></div>
+        <div class="education-description-box left-align">
+          <p>
+            During my second year in high school I chose to switch over from
+            media and communication to ICT-Service. During this year I was
+            visited IntraHouse in Ålesund once a week for a period of time,
+            getting a soft introduction to the workday of a tech company.
+          </p>
+        </div>
+        <div class="education-description-box right-align">
+          <ion-icon
+            class="education-icon-checked"
+            name="checkmark-outline"
+          ></ion-icon>
+          <p>
+            For my first year in high school I chose to do vocational studies in
+            media and communication. I have for most of my life I have been
+            interested in media and design. This year made me find my strengths
+            and weaknesses on the subject.
+          </p>
+        </div>
+        <div class="timeline-line"></div>
+        <div class="education-info-box left-align">
+          <p class="education-title">
+            Media and communication - High School 1st year
+          </p>
+          <p class="education-time-period">
+            <span class="education-time-period-start">August 2014</span> -
+            <span class="education-time-period-end">June 2015</span>
+          </p>
+          <p class="education-instituion">Akademiet Ålesund</p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

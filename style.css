@@ -1,0 +1,207 @@
+/* #749479 #42926d 
+
+Primary: #3c6e71*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  line-height: 1;
+  font-size: 1.8rem;
+  color: #555;
+}
+
+.heading-secondary {
+  color: #3c6e71;
+  margin-bottom: 2rem;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.margin-top-sm {
+  margin-top: 1.2rem;
+}
+
+/****************************/
+/* ABOUT SECTION */
+/****************************/
+.section-about {
+  /* background-color: #f7f7f7; */
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.about-text {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+
+.about-text:first-child {
+  font-weight: 600;
+}
+
+.about-img-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.about-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/****************************/
+/* EDUCATION SECTION */
+/****************************/
+.section-education {
+  background-color: #f7f7f7;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.timeline-grid {
+  padding: 4.8rem 9.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6.8rem;
+  row-gap: 4.4rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 6rem;
+}
+
+.timeline-line {
+  content: "";
+  height: 100%;
+  width: 0.2rem;
+  background-color: #507d7f;
+
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(0, -50%);
+}
+
+.education-icon {
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -50%);
+  position: absolute;
+
+  color: #507d7f;
+  background-color: #fff;
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  border: 0.2rem solid #507d7f;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.education-icon-checked {
+  top: 0;
+  right: 0%;
+  transform: translate(142%, 100%);
+  position: absolute;
+
+  color: #507d7f;
+  background-color: #fff;
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  border: 0.2rem solid #507d7f;
+  padding: 0.4rem;
+  z-index: 1;
+}
+
+.education-icon-unchecked {
+  top: 0;
+  right: 0%;
+  transform: translate(142%, 100%);
+  position: absolute;
+
+  color: rgb(212, 212, 212);
+  background-color: #fff;
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  border: 0.2rem solid #aaa;
+  padding: 0.4rem;
+  z-index: 1;
+}
+
+.education-info-box {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  position: relative;
+}
+.education-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.education-description-box {
+  /* padding: 3.2rem 2.4rem; */
+  font-size: 1.4rem;
+  line-height: 1.6;
+  position: relative;
+}
