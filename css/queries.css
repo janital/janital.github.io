@@ -1,0 +1,45 @@
+@media (max-width: 58em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .about-grid {
+    grid-template-columns: 4fr 1fr;
+    column-gap: 4rem;
+    align-items: start;
+  }
+
+  .about-text {
+    margin-bottom: 3.2rem;
+  }
+
+  .about-img-grid {
+    justify-self: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-grid {
+    padding: 4.8rem 4.4rem;
+  }
+}
+
+@media (max-width: 47em) {
+  .about-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-img-grid {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+  }
+
+  .timeline-grid {
+    padding: 4.8rem 2rem;
+  }
+}
+
+@media (max-width: 34em) {
+  html {
+    font-size: 50%;
+  }
+}
