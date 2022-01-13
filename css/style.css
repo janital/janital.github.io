@@ -1,6 +1,12 @@
 /* #749479 #42926d 
 
-Primary: #3c6e71*/
+alternative: #44bba4
+
+Primary: */
+
+:root {
+  --color: #3c6e71;
+}
 
 * {
   padding: 0;
@@ -20,7 +26,7 @@ body {
 }
 
 .heading-primary {
-  color: #c5d4d4;
+  color: #ecf1f1;
 }
 
 .heading-secondary {
@@ -52,6 +58,11 @@ body {
   text-align: center;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .grid {
   display: grid;
   align-items: center;
@@ -81,6 +92,20 @@ body {
   height: 0;
 }
 
+.icon-small {
+  height: 2rem;
+  width: 2rem;
+}
+
+.information {
+  color: #666;
+  font-size: 1.4rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: left;
+  align-items: center;
+}
+
 /* .sticky .header {
   position: fixed;
   top: 0;
@@ -98,16 +123,42 @@ body {
   margin-top: 9.6rem;
 } */
 
+.header {
+  padding: 4.8rem 3.2rem 9.6rem 3.2rem;
+  background-image: linear-gradient(
+    /* rgba(12, 22, 23, 0.9), */ var(--color),
+    var(--color)
+  );
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav-links {
+  display: flex;
+  gap: 3.2rem;
+  letter-spacing: 0;
+  list-style: none;
+}
+
+.main-nav-links a:link,
+.main-nav-links a:visited {
+  text-decoration: none;
+  color: #ecf1f1;
+  transition: all 0.4s;
+}
+
+.main-nav-links a:hover,
+.main-nav-links a:active {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 0.2rem;
+}
 /****************************/
 /* HERO SECTION */
 /****************************/
-.section-hero {
-  padding: 4.8rem 3.2rem 9.6rem 3.2rem;
-  background-image: linear-gradient(
-    rgba(12, 22, 23, 0.9),
-    rgba(60, 110, 113, 1)
-  );
-}
 
 /* .hero {
   height: 100vh;
@@ -163,11 +214,41 @@ body {
   object-fit: cover;
 }
 
+.about-icon {
+  display: inline-block;
+  color: #507d7f;
+  background-color: #fff;
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  border: 0.2rem solid #507d7f;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.about-title {
+  display: grid;
+  grid-template-columns: 5rem auto;
+  gap: 1.6rem;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.information {
+  grid-column: 1 / -1;
+}
+
+.about-title h2 {
+  margin: 0;
+  padding: 0;
+}
+
 /****************************/
 /* EDUCATION SECTION */
 /****************************/
 .section-education {
-  background-color: #f7f7f7;
+  background-color: #ecf1f1;
   padding: 4.8rem 0 9.6rem 0;
 }
 
@@ -252,4 +333,23 @@ body {
   font-size: 1.4rem;
   line-height: 1.6;
   position: relative;
+}
+
+/****************************/
+/* COURSE WORK SECTION */
+/****************************/
+.section-course-work {
+  background-color: #fff;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.course-work {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.6;
 }

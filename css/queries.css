@@ -38,7 +38,7 @@
 
   .education-description-box ion-icon,
   .education-info-box ion-icon {
-    --ionicon-stroke-width: 50px;
+    --ionicon-stroke-width: 44px;
   }
 }
 
@@ -53,7 +53,7 @@
   }
 
   .timeline-grid {
-    padding: 4.8rem 2rem;
+    padding: 4.8rem 1.6rem;
   }
 }
 

@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta
+      name="description"
+      content="E - Portofolio for Janita Røyseth, 2nd year Computer Science student at NTNU Campus Ålesund"
+    />
     <link rel="icon" href="img/favicon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,21 +32,27 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <title>Janita Røyseth</title>
+    <title>Janita Røyseth | E - Portofolio</title>
   </head>
   <body>
-    <header class="sticky">
+    <header class="header">
       <nav class="main-nav">
-        <ul></ul>
+        <h1 class="heading-primary">&lt;janita-røyseth /&gt;</h1>
+        <ul class="main-nav-links">
+          <li><a href="#about">about</a></li>
+          <li><a href="#education">education</a></li>
+          <li><a href="#course-work">course work</a></li>
+        </ul>
       </nav>
     </header>
     <main>
-      <section class="section-hero">
-        <h1 class="heading-primary">&lt;janita-røyseth /&gt;</h1>
-      </section>
-      <section class="section-about">
+      <section class="section-hero"></section>
+      <section class="section-about" id="about">
         <div class="about container">
-          <h2 class="heading-secondary">About</h2>
+          <div class="about-title">
+            <ion-icon class="about-icon" name="person-outline"></ion-icon>
+            <h2 class="heading-secondary">About</h2>
+          </div>
           <div class="about-grid">
             <div class="about-text-box">
               <p class="about-text">
@@ -90,15 +99,31 @@
               </p>
             </div>
             <div class="about-img-grid">
-              <img class="about-img" src="img/pic-1.png" />
-              <img class="about-img" src="img/pic-2.png" />
-              <img class="about-img" src="img/pic-3.png" />
-              <img class="about-img" src="img/pic-4.png" />
+              <img
+                class="about-img"
+                alt="picture of Janita Røyseth"
+                src="img/pic-1.png"
+              />
+              <img
+                class="about-img"
+                alt="Janita riding on a horse as a child"
+                src="img/pic-2.png"
+              />
+              <img
+                class="about-img"
+                alt="Janita riding on a horse as a young child"
+                src="img/pic-3.png"
+              />
+              <img
+                class="about-img"
+                alt="Janita sparring in kickboxing"
+                src="img/pic-4.png"
+              />
             </div>
           </div>
         </div>
       </section>
-      <section class="section-education">
+      <section class="section-education" id="education">
         <h2 class="heading-secondary center-align">Education</h2>
         <div class="timeline-grid container">
           <ion-icon class="education-icon" name="school-outline"></ion-icon>
@@ -196,6 +221,67 @@
               <span class="education-time-period-end">June 2015</span>
             </p>
             <p class="education-instituion">Akademiet Ålesund</p>
+          </div>
+        </div>
+      </section>
+      <section class="section-course-work" id="course-work">
+        <div class="course-work container">
+          <div class="about-title">
+            <ion-icon class="about-icon" name="library-outline"></ion-icon>
+            <h2 class="heading-secondary">Course Work</h2>
+            <div class="information">
+              <ion-icon
+                class="icon-small"
+                name="alert-circle-outline"
+              ></ion-icon>
+              <p>Some of these works will contain Norwegian</p>
+            </div>
+          </div>
+          <div class="course">
+            <h3 class="heading-tertiary">
+              IDATA1002 &mdash; Systemdevelopment
+            </h3>
+            <p>
+              In systemdevelopment we had a semesterassignment where we were
+              tasked with creating a todo-list for a specific group. Our group
+              chose to make one for home care, to keep track of daily tasks,
+              list of patients and more. We organized a test group of nurses of
+              various ages and genders, and improved our system based on their
+              feedback. We used gitlab to work together on the project.
+            </p>
+            <a
+              target="_blank"
+              href="https://gitlab.stud.idi.ntnu.no/ninavma/TODO-List-application/-/wikis/home"
+              ><ion-icon name="logo-gitlab"></ion-icon
+            ></a>
+            <ion-icon name="image-outline"></ion-icon>
+          </div>
+          <div class="course">
+            <h3 class="heading-tertiary">
+              IDATA2001 &mdash; Object-Oriented Programming 2
+            </h3>
+            <p>
+              Because of corona, instead of one school exam we were given 3
+              projects over the semester in programming 2. First project we were
+              given was to make a hospital system where we used inheritance by
+              using interface and abstract classes. Second and third project
+              were very similar in that we were tasked to make GUI for a
+              patientregistry, and later postal codes in norway.
+            </p>
+            <ion-icon name="logo-github"></ion-icon>
+            <ion-icon name="image-outline"></ion-icon>
+          </div>
+          <div class="course">
+            <h3 class="heading-tertiary">
+              IDATA1001 &mdash; Object-Oriented Programming 1
+            </h3>
+            <p>
+              The exam in programming 1 ended up being a home-exam because of
+              Corona. For this exam we were tasked with creating a system, with
+              no GUI, over daily registered corona infections and deaths.
+            </p>
+            <ion-icon name="logo-github"></ion-icon>
+            <ion-icon name="image-outline"></ion-icon>
           </div>
         </div>
       </section>
