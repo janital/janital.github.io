@@ -32,11 +32,11 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script defer src="script.js"></script>
     <title>Janita Røyseth | E - Portofolio</title>
   </head>
   <body>
     <header class="header">
-      <h1 class="heading-primary">&lt;janita-røyseth /&gt;</h1>
       <nav class="main-nav">
         <ul class="main-nav-links">
           <li><a href="#about">about</a></li>
@@ -44,22 +44,26 @@
           <li><a href="#course-work">course work</a></li>
         </ul>
       </nav>
+      <div class="presentation">
+        <h1 class="heading-primary">&lt;janita-røyseth/&gt;</h1>
+        <p>2nd year Computer Science student at NTNU</p>
+      </div>
     </header>
     <main>
       <section class="section-about" id="about">
         <div class="about container">
           <div class="about-title">
-            <ion-icon class="about-icon" name="person-outline"></ion-icon>
-            <h2 class="heading-secondary">About</h2>
+            <!-- <ion-icon class="icon-big" name="person-outline"></ion-icon> -->
+            <h2 class="heading-secondary">about</h2>
           </div>
           <div class="about-grid">
             <div class="about-text-box">
               <p class="about-text">
-                Hello there! My name is Janita Lillevik Røyseth, I was born 1998
-                and come from Ålesund in Norway. For most of my life I've been
-                interested in technology, digital art and design. As a result I
-                am now currently attending my 2nd year at NTNU. I expect to be
-                finished with my bachelors degree in June 2023.
+                Hello there! My name is Janita Lillevik Røyseth, I was born in
+                1998 and I come from Ålesund in Norway. For most of my life I've
+                been interested in technology, digital art and design. I am
+                currently attending my 2nd year at NTNU. I expect to be finished
+                with a bachelorsdegree in June 2023.
               </p>
 
               <h3 class="heading-tertiary">Childhood</h3>
@@ -73,28 +77,26 @@
               <h3 class="heading-tertiary">Teenage years</h3>
               <p class="about-text">
                 In my teens I swapped out horse riding lessons for kickboxing,
-                but I was still active on the previously mentioned site,
-                designing and drawing. But I also moved on to other sites like
-                deviantArt. I later chose to study Media and Communication and
-                ICT-Service, and continue with vocational education afterwards.
-                I spent 2 years as an intern at the Norwegian Coastal
-                Administration.
+                but I was still interested in digital art. I began to move on to
+                other sites like deviantArt. Later I chose to study Media and
+                Communication and ICT-Service, and continue with vocational
+                education afterwards. I spent 2 years as an intern at the
+                Norwegian Coastal Administration.
               </p>
               <h3 class="heading-tertiary">Adult life</h3>
               <p class="about-text">
                 After finishing my internship with the Norwegian Coastal Guard I
                 found out I was pregnant. My plans took a completely different
                 direction. After spending over a year at home I knew I wanted to
-                do something else. So I applied for Computer Science at NTNU. I
+                do something else. I applied for Computer Science at NTNU. I
                 spent my summer doing a precourse calculus, while looking after
                 my toddler (not an easy task, as one can imagine).
               </p>
               <h3 class="heading-tertiary">Today</h3>
               <p class="about-text">
-                I am currently studying the 2nd year of Computer Science at NTNU
-                Ålesund, which focuses on application development. It is always
-                interesting and challenging, and also a lot of fun. It has been
-                a very rewarding road so far.
+                I am currently attending my 2nd year of Computer Science at NTNU
+                Campus Ålesund, which focuses on application development. It has
+                been very interesting and challenging, but also a lot of fun.
               </p>
             </div>
             <div class="about-img-grid">
@@ -123,9 +125,12 @@
         </div>
       </section>
       <section class="section-education" id="education">
-        <h2 class="heading-secondary center-align">Education</h2>
+        <h2 class="heading-secondary center-align">education</h2>
         <div class="timeline-grid container">
-          <ion-icon class="education-icon" name="school-outline"></ion-icon>
+          <ion-icon
+            class="education-icon icon-big"
+            name="school-outline"
+          ></ion-icon>
           <div class="education-info-box right-align">
             <ion-icon
               class="education-icon-unchecked"
@@ -224,10 +229,48 @@
         </div>
       </section>
       <section class="section-course-work" id="course-work">
+        <div class="hidden">
+          <ion-icon
+            class="slideshow-icons close"
+            name="close-outline"
+          ></ion-icon>
+          <button onclick="plusSlides(-1)">
+            <ion-icon
+              class="slideshow-icons"
+              name="chevron-back-outline"
+            ></ion-icon>
+          </button>
+          <img
+            alt="screenshot of project from system development course"
+            src="img/idata1002-1.png"
+            class="idata1002 slides"
+          />
+          <img
+            alt="screenshot of project from system development course"
+            src="img/idata1002-2.png"
+            class="idata1002 slides fade"
+          />
+          <img
+            alt="screenshot of project from system development course"
+            src="img/idata1002-3.png"
+            class="idata1002 slides"
+          />
+          <img
+            alt="screenshot of project from system development course"
+            src="img/idata1002-4.png"
+            class="idata1002 slides"
+          />
+          <button onclick="plusSlides(1)">
+            <ion-icon
+              class="slideshow-icons next-slide"
+              name="chevron-forward-outline"
+            ></ion-icon>
+          </button>
+        </div>
         <div class="course-work container">
-          <div class="about-title">
-            <ion-icon class="about-icon" name="library-outline"></ion-icon>
-            <h2 class="heading-secondary">Course Work</h2>
+          <div class="course-work-title">
+            <!-- <ion-icon class="icon-big" name="library-outline"></ion-icon> -->
+            <h2 class="heading-secondary">course work</h2>
             <div class="information">
               <ion-icon
                 class="icon-small"
@@ -253,7 +296,9 @@
               href="https://gitlab.stud.idi.ntnu.no/ninavma/TODO-List-application/-/wikis/home"
               ><ion-icon name="logo-gitlab"></ion-icon
             ></a>
-            <ion-icon name="image-outline"></ion-icon>
+            <button class="slideshow-button">
+              <ion-icon name="image-outline"></ion-icon>
+            </button>
           </div>
           <div class="course">
             <h3 class="heading-tertiary">
@@ -267,7 +312,9 @@
               were very similar in that we were tasked to make GUI for a
               patientregistry, and later postal codes in norway.
             </p>
-            <ion-icon name="logo-github"></ion-icon>
+            <a href="https://github.com/janital/IDATA2001" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
             <ion-icon name="image-outline"></ion-icon>
           </div>
           <div class="course">
@@ -280,7 +327,7 @@
               no GUI, over daily registered corona infections and deaths.
             </p>
             <ion-icon name="logo-github"></ion-icon>
-            <ion-icon name="image-outline"></ion-icon>
+            <!-- <ion-icon name="image-outline"></ion-icon> -->
           </div>
         </div>
       </section>

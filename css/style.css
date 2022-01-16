@@ -5,7 +5,10 @@ alternative: #44bba4
 Primary: */
 
 :root {
-  --color: #3c6e71;
+  /* --color: #3c6e71; */
+  --primary-color: #83d0cb;
+  --secondary-color: #135277;
+  --grey-primary-color: #3d3d44;
 }
 
 * {
@@ -26,11 +29,15 @@ body {
 }
 
 .heading-primary {
-  color: #ecf1f1;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0.1rem 0.1rem 0.1rem #000;
+  font-weight: 500;
 }
 
 .heading-secondary {
-  color: #3c6e71;
+  color: rgba(66, 117, 146, 0.8);
+  text-shadow: 0.05rem 0.05rem 0.1rem rgb(0, 0, 0, 0.7);
+  font-size: 4rem;
   margin-bottom: 2rem;
 }
 
@@ -82,19 +89,20 @@ body {
   margin-top: 1.2rem;
 }
 
-.sticky {
-  position: fixed;
-  z-index: 5;
-  top: 5%;
-  padding-left: 2rem;
-  position: -webkit-sticky;
-  position: sticky;
-  height: 0;
-}
-
 .icon-small {
   height: 2rem;
   width: 2rem;
+}
+
+.icon-big {
+  color: var(--secondary-color);
+  background-color: #fff;
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  border: 0.2rem solid var(--secondary-color);
+  padding: 1rem;
+  z-index: 1;
 }
 
 .information {
@@ -107,10 +115,30 @@ body {
 }
 
 .header {
+  padding: 3.2rem 3.2rem 9.6rem 3.2rem;
   display: flex;
-  justify-content: space-between;
-  padding: 4.8rem 3.2rem 9.6rem 3.2rem;
-  background-color: #3c6e71;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: start;
+  align-items: center;
+  height: 50rem;
+  background-image: linear-gradient(
+      150deg,
+      rgba(19, 82, 119, 0.8),
+      rgba(131, 208, 203, 0.8)
+    ),
+    url(/img/hero.jpg);
+  background-size: cover;
+}
+
+.presentation {
+  margin-top: 10rem;
+  color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .main-nav {
@@ -128,14 +156,14 @@ body {
 .main-nav-links a:link,
 .main-nav-links a:visited {
   text-decoration: none;
-  color: #ecf1f1;
+  color: rgba(255, 255, 255, 0.6);
   transition: all 0.4s;
 }
 
 .main-nav-links a:hover,
 .main-nav-links a:active {
   text-decoration: none;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
   letter-spacing: 0.2rem;
 }
 /****************************/
@@ -194,16 +222,17 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
 .about-icon {
   display: inline-block;
-  color: #507d7f;
+  color: var(--secondary-color);
   background-color: #fff;
   height: 3.2rem;
   width: 3.2rem;
   border-radius: 50%;
-  border: 0.2rem solid #507d7f;
+  border: 0.2rem solid var(--secondary-color);
   padding: 1rem;
   z-index: 1;
 }
@@ -230,7 +259,7 @@ body {
 /* EDUCATION SECTION */
 /****************************/
 .section-education {
-  background-color: #ecf1f1;
+  background-color: #fff;
   padding: 4.8rem 0 9.6rem 0;
 }
 
@@ -250,7 +279,7 @@ body {
   content: "";
   height: 100%;
   width: 0.2rem;
-  background-color: #507d7f;
+  background-color: var(--secondary-color);
 
   position: absolute;
   top: 50%;
@@ -263,15 +292,6 @@ body {
   right: 50%;
   transform: translate(50%, -50%);
   position: absolute;
-
-  color: #507d7f;
-  background-color: #fff;
-  height: 3.2rem;
-  width: 3.2rem;
-  border-radius: 50%;
-  border: 0.2rem solid #507d7f;
-  padding: 1rem;
-  z-index: 1;
 }
 
 .education-icon-checked,
@@ -290,8 +310,8 @@ body {
 }
 
 .education-icon-checked {
-  color: #507d7f;
-  border: 0.2rem solid #507d7f;
+  color: var(--secondary-color);
+  border: 0.2rem solid var(--secondary-color);
 }
 
 .education-icon-unchecked {
@@ -334,4 +354,77 @@ body {
 p {
   font-size: 1.4rem;
   line-height: 1.6;
+}
+
+.slideshow {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(12, 22, 23, 0.7);
+  backdrop-filter: blur(0.4rem);
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.slideshow-icons {
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 4rem;
+  width: 4rem;
+  color: #ecf1f1;
+}
+
+.close {
+  display: inline-block;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  margin: 0;
+  height: 4rem;
+  width: 4rem;
+  color: #ecf1f1;
+}
+
+.hidden {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.slides {
+  width: 65%;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: none;
+  margin: none;
+  cursor: pointer;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.2s;
+  animation-name: fade;
+  animation-duration: 0.2s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
