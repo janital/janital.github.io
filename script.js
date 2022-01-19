@@ -27,6 +27,7 @@ const revealSection = function (entries, observer) {
     animateLetters(section1.querySelector(".heading-secondary"), 'about.get()');
     setTimeout(function() {
       section1.querySelector(".heading-secondary").textContent = 'about';
+      section1.querySelector(".underscore").textContent = '';
       section1.querySelector(".heading-secondary").style.color = 'rgba(131, 208, 203, 0.7)';
       document.querySelector(".about-grid").classList.remove("hidden");
       console.log('hello');
@@ -34,6 +35,7 @@ const revealSection = function (entries, observer) {
   } else if (entry.target.classList.contains("section-education")) {
     animateLetters(section2.querySelector(".heading-secondary"), 'education.get()');
     setTimeout(function() {
+      section2.querySelector(".underscore").textContent = '';
       section2.querySelector(".heading-secondary").textContent = 'education';
       section2.querySelector(".heading-secondary").style.color = 'rgba(131, 208, 203, 0.7)';
       document.querySelector(".timeline-grid").classList.remove("hidden");
@@ -41,6 +43,7 @@ const revealSection = function (entries, observer) {
   } else if (entry.target.classList.contains("section-course-work")) {
     animateLetters(section3.querySelector(".heading-secondary"), 'courseWork.get()');
     setTimeout(function() {
+      section3.querySelector(".underscore").textContent = '';
       section3.querySelector(".heading-secondary").textContent = 'course work';
       section3.querySelector(".heading-secondary").style.color = 'rgba(131, 208, 203, 0.7)';
       document.querySelector(".courses").classList.remove("hidden");
