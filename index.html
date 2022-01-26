@@ -1,134 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="E - Portofolio for Janita Røyseth, 2nd year Computer Science student at NTNU Campus Ålesund"
-    />
-    <link rel="icon" href="img/favicon.png" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="queries.css">
 
-    <script
+  <script
       type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" >
+  </script>
+  <script
       nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script defer src="script.js"></script>
-    <title>Janita Røyseth | E - Portofolio</title>
-  </head>
-  <body>
-    <header class="header">
-      <nav class="main-nav">
-        <ul class="main-nav-links">
-          <li><a href="#about">about</a></li>
-          <li><a href="#education">education</a></li>
-          <li><a href="#course-work">course work</a></li>
-        </ul>
-      </nav>
-      <div class="presentation">
-        <h1 class="heading-primary"></h1>
-        <p>2nd year Computer Science student at NTNU</p>
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+  </script>
+  <script defer src="script.js"></script>
+  <title>Janita Røyseth | e-Portfolio</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="main-nav">
+      <ul class="main-nav-links">
+        <li><a class="main-nav-link" href="#">about</a></li>
+        <li><a class="main-nav-link" href="#">education</a></li>
+        <li><a class="main-nav-link" href="#">course work</a></li>
+      </ul>
+    </nav>
+    <h1 class="heading-primary">
+      <span class="heading-primary--main">&lt;janita-røyseth/&gt;</span>
+      <span class="heading-primary--sub">2nd year computer science student at NTNU</span>
+    </h1>
+    <img class="header-bg" src="bg-header.svg" alt=""/>
+  </header>
+  <main>
+    <section class="section-about">
+      <h2 class="heading-secondary center-align">about</h2>
+      <div class="about-presentation-grid">
+        <div class="about-presentation">
+          <div class="profile-pic"></div>
+          <p class="about-text-small">Hello there! My name is Janita Lillevik Røyseth, I was born in 1998 and I come from Ålesund in Norway. For most of my life I've been interested in technology, digital art and design. I am currently attending my 2nd year at NTNU. I expect to be finished with a bachelorsdegree in June 2023.</p>
+        </div>
+        <div class="about-skill">
+          <ion-icon class="skill-icon" name="code-slash"></ion-icon>
+          <p class="about-skill-text">So far in my time at NTNU I have used the languages Java, Python, SQL, HTML, CSS and JavaScript.</p>
+        </div>
+        <div class="about-skill">
+          <ion-icon class="skill-icon" name="brush"></ion-icon>
+          <p class="about-skill-text">I have experience with most of adobes programs, as well as open-source programs like Inkscape.</p>
+        </div>
+        <div class="about-skill">
+          <ion-icon class="skill-icon" name="desktop-outline"></ion-icon>
+          <p class="about-skill-text">I know the basics of IT-operations and IT-support after studying ICT-service and being an intern.</p>
+        </div>
+        <div class="about-skill">
+          <ion-icon class="skill-icon" name="color-filter"></ion-icon>
+          <p class="about-skill-text">I am educated about design principles from studying media for 1st year of high school.</p>
+        </div>
       </div>
-    </header>
-    <main>
-      <section class="section section-about" id="about">
-        <div class="about container">
-          <div class="about-title">
-            <!-- <ion-icon class="icon-big" name="person-outline"></ion-icon> -->
-            <h2 class="heading-secondary"></h2><span class="underscore">_</span> 
-          </div>
-          <div class="about-grid hidden">
-            <div class="about-text-box">
-              <p class="about-text">
-                Hello there! My name is Janita Lillevik Røyseth, I was born in
-                1998 and I come from Ålesund in Norway. For most of my life I've
-                been interested in technology, digital art and design. I am
-                currently attending my 2nd year at NTNU. I expect to be finished
-                with a bachelorsdegree in June 2023.
-              </p>
-
-              <h3 class="heading-tertiary">Childhood</h3>
-              <p class="about-text">
-                As a child I was primarily interested in horses, not something
-                you would expect someone technology interested to write? Well,
-                this interest turned me to a website for horse-interested girls.
-                On this website one could design their profile using html, which
-                is where I pinpoint that my interest for development started.
-              </p>
-              <h3 class="heading-tertiary">Teenage years</h3>
-              <p class="about-text">
-                In my teens I swapped out horse riding lessons for kickboxing,
-                but I was still interested in digital art. I began to move on to
-                other sites like deviantArt. Later I chose to study Media and
-                Communication and ICT-Service, and continue with vocational
-                education afterwards. I spent 2 years as an intern at the
-                Norwegian Coastal Administration.
-              </p>
-              <h3 class="heading-tertiary">Adult life</h3>
-              <p class="about-text">
-                After finishing my internship with the Norwegian Coastal Guard I
-                found out I was pregnant. My plans took a completely different
-                direction. After spending over a year at home I knew I wanted to
-                do something else. I applied for Computer Science at NTNU. I
-                spent my summer doing a precourse calculus, while looking after
-                my toddler (not an easy task, as one can imagine).
-              </p>
-              <h3 class="heading-tertiary">Today</h3>
-              <p class="about-text">
-                I am currently attending my 2nd year of Computer Science at NTNU
-                Campus Ålesund, which focuses on application development. It has
-                been very interesting and challenging, but also a lot of fun.
-              </p>
-            </div>
-            <div class="about-img-grid">
-              <img
-                class="about-img"
-                alt="picture of Janita Røyseth"
-                src="img/pic-1.png"
-              />
-              <img
-                class="about-img"
-                alt="Janita riding on a horse as a child"
-                src="img/pic-2.png"
-              />
-              <img
-                class="about-img"
-                alt="Janita riding on a horse as a young child"
-                src="img/pic-3.png"
-              />
-              <img
-                class="about-img"
-                alt="Janita sparring in kickboxing"
-                src="img/pic-4.png"
-              />
-            </div>
-          </div>
+      <div class="about-life">
+        <div class="about-img-grid">
+          <img
+            class="about-img"
+            alt="Janita riding on a horse as a young child"
+            src="pic-3.png"
+          />
+          <img
+            class="about-img"
+            alt="Janita riding on a horse as a child"
+            src="pic-2.png"
+          />
+          <img
+            class="about-img"
+            alt="Janita sparring in kickboxing"
+            src="pic-4.png"
+          />
         </div>
-      </section>
-      <section class="section section-education" id="education">
-        <div class="education-title">
-
-          <h2 class="heading-secondary center-align"></h2><span class="underscore">_</span>
+        <div class="about-life-text">
+          <h3 class="heading-tertiary text--white">Childhood</h3>
+            <p class="about-text">
+              As a child I was primarily interested in horses, not something
+              you would expect someone technology interested to write? Well,
+              this interest turned me to a website for horse-interested girls.
+              On this website one could design their profile using html, which
+              is where I pinpoint that my interest for development started.
+            </p>
+            <h3 class="heading-tertiary text--white">Teenage years</h3>
+            <p class="about-text">
+              In my teens I swapped out horse riding lessons for kickboxing,
+              but I was still interested in digital art. I began to move on to
+              other sites like deviantArt. Later I chose to study Media and
+              Communication and ICT-Service, and continue with vocational
+              education afterwards. I spent 2 years as an intern at the
+              Norwegian Coastal Administration.
+            </p>
+            <h3 class="heading-tertiary text--white">Adult life</h3>
+            <p class="about-text">
+              After finishing my internship with the Norwegian Coastal Guard I
+              found out I was pregnant. My plans took a completely different
+              direction. After spending over a year at home I knew I wanted to
+              do something else. I applied for Computer Science at NTNU. I
+              spent my summer doing a precourse calculus, while looking after
+              my toddler (not an easy task, as one can imagine).
+            </p>
+            <h3 class="heading-tertiary text--white">Today</h3>
+            <p class="about-text">
+              I am currently attending my 2nd year of Computer Science at NTNU
+              Campus Ålesund, which focuses on application development. It has
+              been very interesting and challenging, but also a lot of fun.
+            </p>
         </div>
+        <img src="bg-about-life2.svg" alt="" class="about-bg"/>
+      </div>
+    </section>
+    <section class="section-education">
+      <h2 class="heading-secondary center-align">education</h2>
         <div class="timeline-grid container hidden">
           <ion-icon
             class="education-icon icon-big"
@@ -139,7 +132,7 @@
               class="education-icon-unchecked"
               name="checkmark-outline"
             ></ion-icon>
-            <p class="education-titles heading-tertiary">
+            <p class="education-title heading-tertiary right-align">
               Bachelor (In Progress)
             </p>
             <p class="education-time-period">
@@ -171,9 +164,9 @@
           </div>
           <div class="timeline-line"></div>
           <div class="education-info-box left-align">
-            <p class="education-titles heading-tertiary">
+            <h3 class="education-title heading-tertiary left-align">
               Vocational training / Internship
-            </p>
+            </h3>
             <p class="education-time-period">
               <span class="education-time-period-start">August 2016</span> -
               <span class="education-time-period-end">August 2018</span>
@@ -188,7 +181,7 @@
               class="education-icon-checked"
               name="checkmark-outline"
             ></ion-icon>
-            <p class="education-titles heading-tertiary">
+            <p class="education-title heading-tertiary">
               ICT-Service - High School 2nd year
             </p>
             <p class="education-time-period">
@@ -220,9 +213,9 @@
           </div>
           <div class="timeline-line"></div>
           <div class="education-info-box left-align">
-            <h3 class="education-titles heading-tertiary">
+            <p class="education-title heading-tertiary">
               Media and communication - High School 1st year
-            </h3>
+            </p>
             <p class="education-time-period">
               <span class="education-time-period-start">August 2014</span> -
               <span class="education-time-period-end">June 2015</span>
@@ -230,71 +223,116 @@
             <p class="education-instituion">Akademiet Ålesund</p>
           </div>
         </div>
-      </section>
-      <section class="section section-course-work" id="course-work">
-        <div class="course-work container">
-          <div class="course-work-title">
-            <!-- <ion-icon class="icon-big" name="library-outline"></ion-icon> -->
-            <h2 class="heading-secondary"></h2><span class="underscore">_</span>
+    </section>
+    <section class="section-course-work">
+      <div class="course-work-title ">
+        <h2 class="heading-secondary heading--white">course work</h2>
+      <div class="courses hidden">
+        <div class="course">
+          <div class="course-summary">
+            <h3 class="heading-tertiary heading--white">
+              IDATA2301 &mdash; Web Technologies (ongoing)
+            </h3>
+            <p class="text--white">
+              In web technologies we have a semesterassignment where we are tasked with creating 
+              an online store for a herbal tea brand called Urban Infusion.
+            </p>
           </div>
-          <div class="information">
-            <ion-icon
-              class="icon-small"
-              name="alert-circle-outline"
-            ></ion-icon>
-            <p>Some of these works will contain Norwegian</p>
-          </div>
-          <div class="courses hidden">
-            <div class="course">
-              <h3 class="heading-tertiary">
-                IDATA1002 &mdash; Systemdevelopment
-              </h3>
-              <p>
-                In systemdevelopment we had a semesterassignment where we were
-                tasked with creating a todo-list for a specific group. Our group
-                chose to make one for home care, to keep track of daily tasks,
-                list of patients and more. We organized a test group of nurses of
-                various ages and genders, and improved our system based on their
-                feedback. We used gitlab to work together on the project.
-              </p>
-              <a
-              target="_blank"
-              href="https://gitlab.stud.idi.ntnu.no/ninavma/TODO-List-application/-/wikis/home"
-              ><ion-icon name="logo-gitlab"></ion-icon
-                ></a>
-                <ion-icon name="image-outline"></ion-icon>
-            </div>
-            <div class="course">
-                <h3 class="heading-tertiary">
-                  IDATA2001 &mdash; Object-Oriented Programming 2
-                </h3>
-                <p>
-                  Because of corona, instead of one school exam we were given 3
-                  projects over the semester in programming 2. First project we were
-                  given was to make a hospital system where we used inheritance by
-                  using interface and abstract classes. Second and third project
-                  were very similar in that we were tasked to make GUI for a
-                  patientregistry, and later postal codes in norway.
-                </p>
-                <a href="https://github.com/janital/IDATA2001" target="_blank">
-                  <ion-icon name="logo-github"></ion-icon>
-                </a>
-                <ion-icon name="image-outline"></ion-icon>
-            </div>
-            <div class="course">
-                <h3 class="heading-tertiary">
-                  IDATA1001 &mdash; Object-Oriented Programming 1
-                </h3>
-                <p>
-                  The exam in programming 1 ended up being a home-exam because of
-                  Corona. For this exam we were tasked with creating a system, with
-                  no GUI, over daily registered corona infections and deaths.
-                </p>
-                <ion-icon name="logo-github"></ion-icon>
-            </div>     
+          <div class="course-links">
+            <a href="https://github.com/pr0xity/Urban-Infusion" target="_blank">
+              <ion-icon class="git-link-icon" name="logo-github"></ion-icon>
+            </a>
+            <!-- <ion-icon name="image-outline"></ion-icon> -->
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+        <div class="course">
+          <div class="course-summary">
+
+            <h3 class="heading-tertiary heading--white">
+              IDATA2306 &mdash; Application development (ongoing)
+            </h3>
+            <p class="text--white">
+              In application development we have a semesterassignment connected to out assignment 
+              in web technologies. We are tasked with making the backend webserver with the business logic
+              of our herbal tea online store.
+            </p>
+          </div>
+          <div class="course-links">
+
+            <a href="https://github.com/pr0xity/Urban-Infusion" target="_blank">
+              <ion-icon class="git-link-icon" name="logo-github"></ion-icon>
+            </a>
+            <!-- <ion-icon name="image-outline"></ion-icon> -->
+          </div>
+        </div>
+        <div class="course">
+          <div class="course-summary">
+
+            <h3 class="heading-tertiary heading--white">
+              IDATA1002 &mdash; Systemdevelopment
+            </h3>
+            <p class="text--white">
+              In systemdevelopment we had a semesterassignment where we were
+              tasked with creating a todo-list for a specific group. Our group
+              chose to make one for home care, to keep track of daily tasks,
+              list of patients and more. We organized a test group of nurses of
+              various ages and genders, and improved our system based on their
+              feedback. We used gitlab to work together on the project.
+            </p>
+          </div>
+          <div class="course-links">
+
+            <a
+            target="_blank"
+            href="https://gitlab.stud.idi.ntnu.no/ninavma/TODO-List-application/-/wikis/home"
+            ><ion-icon class="git-link-icon" name="logo-gitlab"></ion-icon
+              ></a>
+              <!-- <ion-icon name="image-outline"></ion-icon> -->
+            </div>
+        </div>
+        <div class="course">
+          <div class="course-summary">
+
+            <h3 class="heading-tertiary heading--white">
+              IDATA2001 &mdash; Object-Oriented Programming 2
+            </h3>
+            <p class="text--white">
+              Because of corona, instead of one school exam we were given 3
+              projects over the semester in programming 2. First project we were
+              given was to make a hospital system where we used inheritance by
+              using interface and abstract classes. Second and third project
+              were very similar in that we were tasked to make GUI for a
+              patientregistry, and later postal codes in norway.
+            </p>
+          </div>
+          <div class="course-links">
+
+            <a href="https://github.com/janital/IDATA2001" target="_blank">
+              <ion-icon class="git-link-icon" name="logo-github"></ion-icon>
+            </a>
+            <!-- <ion-icon name="image-outline"></ion-icon> -->
+          </div>
+        </div>
+        <div class="course">
+          <div class="course-summary">
+
+            <h3 class="heading-tertiary heading--white">
+              IDATA1001 &mdash; Object-Oriented Programming 1
+            </h3>
+            <p class="text--white">
+              The exam in programming 1 ended up being a home-exam because of
+              Corona. For this exam we were tasked with creating a system, with
+              no GUI, over daily registered corona infections and deaths.
+            </p>
+          </div>
+          <div class="course-links">
+
+            <ion-icon class="git-link-icon" name="logo-github"></ion-icon>
+          </div>
+        </div>     
+      </div>
+      <img class="course-work-bg" src="bg-course-work2.svg" alt=""/>
+    </section>
+  </main>
+</body>
 </html>
