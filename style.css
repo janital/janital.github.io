@@ -7,11 +7,16 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  max-width: 160rem;
+  margin: 0 auto;
 }
 
 body {
   font-family: "Roboto Mono", sans-serif;
   font-size: 1.8rem;
+  overflow-x: hidden;
+  max-width: 160rem;
+  margin: 0 auto;
 }
 
 .left-align {
@@ -62,7 +67,8 @@ body {
 .header {
   padding: 2rem;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  height: 70rem;
 }
 
 .main-nav-links {
@@ -87,7 +93,7 @@ body {
 }
 
 .section-about {
-  padding: 35rem 4.6rem 9.6rem 9.6rem;
+  padding: 15rem 4.6rem 9.6rem 9.6rem;
 }
 
 .about-presentation-grid {
@@ -306,6 +312,7 @@ body {
   left: 0;
   width: 100vw;
   z-index: -9997;
+  object-fit: contain;
 }
 
 .course-links {

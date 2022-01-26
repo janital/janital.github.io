@@ -2,6 +2,14 @@
   .section-about{
     padding-top: 37%;
   }
+
+  .about-bg {
+    max-width: 165rem;
+  }
+
+  .course-work-bg {
+    max-width: 165rem;
+  }
 }
 
 /*
@@ -11,6 +19,10 @@
   html {
     font-size: 56.25%;
     overflow-x: hidden;
+  }
+
+  .heading-primary {
+    top: 20%;
   }
 
   .section-about {
@@ -83,10 +95,11 @@
 
   body, html {
     overflow-x: hidden;
+    font-size: 50%;
   }
 
   .heading-primary {
-    top: 30%;
+    top: 20%;
   }
 
   .heading-primary--main {
@@ -94,11 +107,16 @@
   }
   
   .heading-primary--sub {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+
+  .header {
+    padding: 0;
+    margin: 0;
   }
 
   .header-bg {
-    width: 130%;
+    width: 170%;
   }
 
   .section-about {
@@ -137,16 +155,28 @@
   }
 
   .about-bg {
-    width: 113rem;
+    width: auto;
+    top: -5%;
+    height: 115%;
     content: url(bg-about-life-mob.svg);
   }
   
   .section-education {
-    padding-top: 60%;
+    padding-top: 40%;
   }
 
   .timeline-grid {
     padding: 7.2rem 2rem;
+    column-gap: 5.8;
+  }
+
+  .heading-secondary {
+    font-size: 3.2rem;
+  }
+
+
+  .heading-tertiary {
+    font-size: 1.6rem;
   }
 
   .section-course-work {
