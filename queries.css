@@ -22,7 +22,7 @@
   }
 
   .heading-primary {
-    top: 30%;
+    /* top: 50%; */
   }
 
   .section-about {
@@ -95,11 +95,10 @@
 
   body, html {
     overflow-x: hidden;
-    font-size: 50%;
   }
 
   .heading-primary {
-    top: 20%;
+    /* top: 20%; */
   }
 
   .heading-primary--main {
@@ -107,7 +106,11 @@
   }
   
   .heading-primary--sub {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+  }
+
+  .heading-secondary {
+    font-size: 4.8rem;
   }
 
   .header {
@@ -120,7 +123,7 @@
   }
 
   .section-about {
-    padding: 0% 2rem 0 2rem;
+    padding: 60% 2rem 0 2rem;
   }
 
   .about-presentation-grid {
@@ -168,10 +171,6 @@
   .timeline-grid {
     padding: 7.2rem 2rem;
     column-gap: 5.8;
-  }
-
-  .heading-secondary {
-    font-size: 3.2rem;
   }
 
 

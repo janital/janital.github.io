@@ -68,8 +68,8 @@ body {
 .header {
   padding: 2rem;
   position: relative;
-  min-height: 100vh;
-  height: 70rem;
+  max-height: 100vh;
+  min-height: 40rem;
 }
 
 .main-nav-links {
@@ -94,7 +94,8 @@ body {
 }
 
 .section-about {
-  padding: 40rem 4.6rem 9.6rem 9.6rem;
+  margin-top: 37%;
+  padding: 0 4.6rem 9.6rem 9.6rem;
 }
 
 .about-presentation-grid {
