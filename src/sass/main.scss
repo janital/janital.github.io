@@ -1,0 +1,134 @@
+@mixin typewriter($width) {
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: $width;
+    }
+  }
+}
+
+@mixin colorIn($startColor, $endColor) {
+  @keyframes colorIn {
+    0% {
+      background-color: $startColor;
+    }
+    82% {
+      background-color: $startColor;
+    }
+    100% {
+      background-color: $endColor;
+    }
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  82% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+$color-primary: #00ff84;
+$color-white: #ffffff;
+$color-black: #01090e;
+$fadeIn-animation: fadeIn 2.7s;
+$clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $color-black;
+  color: $color-white;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  overflow-x: hidden;
+}
+
+.heading-primary {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__name {
+    @include typewriter(42rem);
+    margin: 0 auto 2rem;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 4rem;
+    font-weight: 500;
+    background: $color-primary;
+    text-shadow: 0 0 0.3rem $color-primary;
+    -webkit-background-clip: text;
+    background-clip: text;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    color: transparent;
+    animation: typewriter 1.5s steps(44) 0.2s 1 normal both,
+      blinkTextCursor 800ms steps(44) infinite normal;
+  }
+
+  &__about {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    animation: $fadeIn-animation;
+  }
+}
+
+.hero {
+  &__section {
+    padding-top: 8rem;
+    position: relative;
+    height: calc(100vh - 4.8rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.6rem;
+    text-align: center;
+    background-color: $color-black;
+    clip-path: $clip-path;
+  }
+
+  &__contact {
+    display: flex;
+    gap: 3.2rem;
+    justify-content: center;
+    animation: $fadeIn-animation;
+  }
+
+  &__btn {
+    &:link,
+    &:visited {
+      color: $color-primary;
+    }
+
+    &:active,
+    &:hover {
+      filter: drop-shadow(0 0 0.2rem $color-primary);
+    }
+  }
+}
